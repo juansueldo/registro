@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.banner {
+  width: 100%;
+  object-fit: fill;
+}
+.logo{
+  position: absolute;
+  width: 260px;
+  object-fit: fill;
+  filter: invert();
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+.boton {
+  color: white;
+}
+.guardar {
+  background-color: #71b100;
+}
+.boton:hover {
+  opacity: 0.8;
+}
+.eliminar {
+  background-color: #ff5712;
+}
+.cancelar {
+  background-color: #1153f6;
+}
+fieldset {
+  left: 0;
+  right: 0;
+}
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+th,
+td {
+  border: 1px solid black;
+  padding: 5px 10px;
+}
+th {
+  text-transform: capitalize;
+}
+td {
+  text-align: right;
+}
+tr:hover {
+  opacity: 0.8;
+}
+tr {
+  cursor: pointer;
+}
+.rowPar {
+  background-color: #161313;
+  color: #fff;
+}
+.spinner {
+  border: 8px solid #f3f3f3; /* color del borde del spinner */
+  border-top: 8px solid #db3434; /* color de la parte superior del spinner */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite; /* animación del spinner */
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hidden,
+.hidden-btn {
+  display: none; /* clase para ocultar el spinner */
+}
+.headRow {
+  background-color: #ff0000;
+}
