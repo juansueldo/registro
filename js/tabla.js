@@ -24,6 +24,7 @@ const crearCabecera = (elemento)=>{
     
     const tHead = document.createElement("thead"),
     headRow = document.createElement("tr");
+    tHead.classList.add("thead-dark");
     headRow.classList.add("headRow");
     for (const key in elemento) {
         const th = document.createElement("th");
@@ -58,7 +59,7 @@ const crearCuerpo = (data)=>{
                 const td = document.createElement("td");
                 //De esta manera se crean mas manejadores de eventos td.addEventListener("click", handlerClickTd);
                 if(key === "parametro"){
-                    td.textContent = element[key] ? "Entrada" : "Salida";
+                    td.textContent = element[key];
                 }
                 else{
                     td.textContent = element[key];

@@ -33,8 +33,13 @@ window.onload = () => {
 function handlerCreate(nuevaPersona) {
   personas.push(nuevaPersona);
   actualizarTabla($seccionTabla, personas);
-  guardarObjetosEnCSV(personas);
+  
 }
+const btn = document.getElementById("download");
+btn.addEventListener("click", (e)=>
+{
+  guardarObjetosEnCSV(personas);
+});
 
 function guardarObjetosEnCSV(objetos) {
   // Obtener la fecha actual

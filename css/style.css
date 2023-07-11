@@ -1,42 +1,40 @@
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: utile-display, sans-serif;
 }
-.banner {
+
+.container-fluid {
+  position: relative;
+  background-color: rgba(236,98,47);
+}
+
+.banner{
   width: 100%;
   object-fit: fill;
 }
-.logo{
-  position: absolute;
+
+.logo {
   width: 260px;
   object-fit: fill;
   filter: invert();
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-
+#miFormulario{
+  display: flex;
+  justify-content: center;
+}
+.input-group{
+  align-items: center;
+  margin: 15px;
+}
 .container {
   display: flex;
   justify-content: space-around;
-}
-.boton {
-  color: white;
-}
-.guardar {
-  background-color: #71b100;
-}
-.boton:hover {
-  opacity: 0.8;
-}
-.eliminar {
-  background-color: #ff5712;
-}
-.cancelar {
-  background-color: #1153f6;
-}
-fieldset {
-  left: 0;
-  right: 0;
 }
 table {
   width: 80%;
@@ -59,14 +57,16 @@ tr:hover {
 }
 tr {
   cursor: pointer;
+  background-color: rgba(236,98,47);
+  color: #fff;
 }
 .rowPar {
-  background-color: #161313;
-  color: #fff;
+  background-color: rgb(245, 245, 245);
+  color: #000;
 }
 .spinner {
   border: 8px solid #f3f3f3; /* color del borde del spinner */
-  border-top: 8px solid #db3434; /* color de la parte superior del spinner */
+  border-top: 8px solid rgba(236,98,47); /* color de la parte superior del spinner */
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -88,5 +88,5 @@ tr {
   display: none; /* clase para ocultar el spinner */
 }
 .headRow {
-  background-color: #ff0000;
+  background-color: #eb6864;
 }

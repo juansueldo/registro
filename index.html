@@ -2,22 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Piccadely</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" type="module"></script>
-    <link rel="shortcut icon" href="/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.2.3/journal/bootstrap.min.css" integrity="sha512-idjfPXQ6riP0BTBfHP0Suns3C1yZK486mMgm6Dd1pRQDizubroQ6EMZNP2S86C42mTOXCfKAQ/wcQ//Q3V2mQg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css" integrity="sha512-giQeaPns4lQTBMRpOOHsYnGw1tGVzbAIHUyHRgn7+6FmiEgGGjaG0T2LZJmAPMzRCl+Cug0ItQ2xDZpTmEc+CQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="/js/script.js" type="module"></script>
+    <link rel="shortcut icon" href="/images/favicon-32x32.png" type="image/x-icon">
 </head>
 <body>
+    <nav>
+        <div class="container-fluid">
+          <img class="banner" src="images/piccadas.jpg" alt="">
+          <img class="logo"src="images/Piccadely-logotipo.png" alt="">
+        </div> 
+    </nav>
+    <section id="form">
         <form id="miFormulario">
-            <input type="text" id="miInput" placeholder="id" >
-            <input type="submit" value="Enviar" hidden>
+            <div class="input-group">
+                <input type="text" id="miInput" placeholder="id" class="form-control">
+                <input type="submit" value="Enviar" hidden>
+                <button id="download" class="filter btn btn-outline-primary" >Descargar</button>
+
+            </div>
         </form>
-        <div id="container"></div>
-        <div id="spinner" class="spinner"></div>
-        <div id="tabla"></div>
-      </body>
-      </html>
+    </section>
+    
+    <div id="container"></div>
+    <div id="spinner" class="spinner"></div>
+    <div id="tabla"></div>
 </body>
 </html>
